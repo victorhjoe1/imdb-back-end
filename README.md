@@ -117,4 +117,39 @@ Este documento fornece informações sobre os endpoints disponíveis na API do I
 
 ### Atualizar Filme por ID
 
-- **
+- **URL:** `/api/filmes/{id}`
+- **Método:** `PUT`
+- **Descrição:** Atualiza um filme pelo seu ID.
+- **Corpo da Requisição:**
+ ```json
+  {
+    "id": 1,
+    "nome": "Nome do Filme",
+    "descricao": "Descrição do Filme",
+    "votos": [{"id":168,"valor":3.0,"idFilme":1,"idUsuario":1}],
+    "mediaVotos": 0,
+    "diretor": "Nome do Diretor",
+    "genero": "Gênero do Filme",
+    "atores": "Lista de Atores"
+}
+```
+- **Resposta:
+ ```json
+- {
+	"id": 1,
+	"nome": "Nome do Filme",
+	"descricao": "Descrição do Filme",
+	"votos": [
+		{
+			"id": 168,
+			"valor": 3.0,
+			"idFilme": 1,
+			"idUsuario": 1
+		}
+	],
+	"mediaVotos": 3,
+	"diretor": "Nome do Diretor",
+	"genero": "Gênero do Filme",
+	"atores": "Lista de Atores"
+}
+```
