@@ -135,7 +135,7 @@ Este documento fornece informações sobre os endpoints disponíveis na API do I
 ```
 - **Resposta:
  ```json
-- {
+ {
 	"id": 1,
 	"nome": "Nome do Filme",
 	"descricao": "Descrição do Filme",
